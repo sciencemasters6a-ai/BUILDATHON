@@ -1,0 +1,33 @@
+{
+  "name": "desktop-app",
+  "version": "0.1.0",
+  "description": "Minimal Electron desktop app scaffold",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "dist": "electron-builder --win"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "electron-builder": "^24.6.0"
+  }
+,
+  "build": {
+    "appId": "com.example.desktopapp",
+    "productName": "Desktop App",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": ["nsis", "portable"]
+    }
+  }
+}
+
